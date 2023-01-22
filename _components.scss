@@ -1,0 +1,33 @@
+.header__btn{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border: none;
+    @media only screen and(max-width:31.25em ){
+        position: absolute;
+        bottom: 0rem;
+        // top: 80vh;
+        margin-bottom: 3rem;
+    }
+    
+}
+
+input{
+    font-size: 3rem;
+    height: 10rem;
+    width: 30rem;
+    color: white;
+    text-align: center;
+    background: none;
+    border: 3px solid white;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.check{
+    color: black;
+    padding: 1rem 4rem;
+    font-size: 2rem;
+    border: none;
+    @media only screen and(max-width:31.25em ){
+        margin-bottom: 5rem;
+    }
+}

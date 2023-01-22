@@ -1,0 +1,103 @@
+.container{
+    height: 100vh;
+    padding: 5rem;
+    @media only screen and(max-width:66.875em ){
+        padding: 3rem;
+    }
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem; 
+    margin-bottom: 5rem;
+    @media only screen and(max-width:31.25em ){
+    justify-content: center;       
+    }
+    @media only screen and(max-width:19.375em ){
+        font-size: 1.2rem; 
+    }
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__heading{
+        font-size: 5rem;
+        text-transform: capitalize;
+        margin-bottom: 5rem;
+        @media only screen and(max-width:46.875em ){
+            font-size: 4rem;
+        }
+        @media only screen and(max-width:31.25em ){
+            font-size: 3rem;
+        }
+        @media only screen and(max-width:19.375em ){
+            font-size: 2.2rem; 
+        }   
+    }
+    &__block{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        font-size: 5rem;
+        background-color: white;
+        color: black;
+        text-align: center;
+
+        &__line{
+            background-color: white;
+            height: .5rem;
+            width: 100vw;
+            margin-top: -5rem;
+            margin-bottom: 8rem;
+            @media only screen and(max-width:52.5em ){
+                margin-bottom: 10rem;
+            }
+            @media only screen and(max-width:46.875em ){
+                margin-bottom: 15rem;
+            }
+            @media only screen and(max-width:41.25em ){
+                margin-bottom: 20rem;
+            }
+            @media only screen and(max-width:31.25em ){
+                margin-bottom: 10rem;
+            }
+
+        }
+    }
+}
+
+.section{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    @media only screen and(max-width:31.25em ){
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media only screen and(max-width:31.25em ){
+            margin-top: 5rem;
+        }
+        
+    }
+    &__right{
+        font-size: 2rem;
+        &__h4{
+            margin-bottom: 5rem;
+        }
+        .score{
+            margin-bottom: 1rem;
+        }
+    }
+}
